@@ -1,0 +1,482 @@
+{"categories":[
+    {
+      "name": "Dudas de Cultivo",
+      "id": 1,
+      "price": 799,
+      "descripcion": "Antes de Cultivar, Vegetación, Floración, Cosecha y curado, Plagas y otros.",
+      "lastElem": 0
+    },
+    {
+      "name": "Consultas sobre Productos",
+      "id": 2,
+      "price": 699,
+      "descripcion": "Instalación, Funcionamiento, Fallas, Detalles técnicos y Diferencias entre productos",
+      "lastElem": 0
+      
+    },
+    {
+      "name": "Dudas en Compras",
+      "id": 3,
+      "price": 299,
+      "descripcion": "Como Comprar, Problemas, Envíos, Retiro, Medios de Pago",
+      "lastElem": 0
+     
+    },
+    {
+      "name": "Antes de cultivar",
+      "descripcion": "Semillas, Germinación, Que necesito para cultivar.",
+      "id": 11,
+      "id_padre": 1,
+      "lastElem": 0
+    },
+    {
+      "name": "Vegetacion",
+      "descripcion":"Sustratos, Fertilizantes, Poda, Plagas.", 
+      "id": 12,
+      "id_padre": 1,
+      "lastElem": 0
+    },
+    {
+      "name": "Floración",
+      "descripcion":"Fertilizantes, Plagas, Lavado de raices.",
+      "id": 13,
+      "id_padre": 1,
+      "lastElem": 0
+    },
+    {
+      "name": "Cosecha y curado",
+      "descripcion": "Como cosechar, Secado y Curado.",
+      "id": 14,
+      "id_padre": 1,
+      "lastElem": 0
+    },
+    {
+      "name": "Plagas",
+      "descripcion": "Tipos de Plagas y como combatirlas.",
+      "id": 15,
+      "id_padre": 1,
+      "lastElem": 0
+    },
+    {
+      "name": "Instalación",
+      "descripcion": "Kit Indoor, Otros Productos.", 
+      "id": 21,
+      "id_padre": 2,
+      "lastElem": 0
+    },
+    {
+      "name": "Funcionamiento",
+      "descripcion": "Sodio/Haluro, Leds, Fertilizantes, Vaporizadores.",
+      "id": 22,
+      "id_padre": 2,
+      "lastElem": 0
+    },
+    {
+      "name": "Fallas",
+      "descripcion": "Garantia, Cómo solicitar el cambio.",
+      "id": 23,
+      "id_padre": 2,
+      "lastElem": 0
+    },
+
+    {
+      "name": "Como Comprar",
+      "descripcion": "Como comprar en Notorious",
+      "id": 31,
+      "id_padre": 3,
+      "lastElem": 0
+    },
+    {
+      "name": "Problemas",
+      "descripcion": "Fallas de productos, cambios, devoluciones", 
+      "id": 32,
+      "id_padre": 3,
+      "lastElem": 0
+    },
+    {
+      "name": "Envios",
+      "descripcion": "¿Cuanto cuesta el envío?, ¿Cuanto demora el envío?, ¿Donde está mi producto?.", 
+      "id": 33,
+      "id_padre": 3,
+      "lastElem": 0
+    },
+    {
+      "name": "Retiro",
+      "descripcion": "Donde Retirar, ¿Cuando puedo realizar el retiro de mi producto?",
+      "id": 34,
+      "id_padre": 3,
+      "lastElem": 0
+    },
+    {
+      "name": "Medios de Pago",
+      "descripcion": "Pago en efectivo, Pago online",
+      "id": 35,
+      "id_padre": 3,
+      "lastElem": 0
+    },
+    {
+      "name": "Semillas",
+      "descripcion": "Garantías de las semillas, Feminizada o automática, Granel, Promociones",
+      "id": 111,
+      "id_padre": 11,
+      "lastElem": 0
+},
+{
+      "name": "Germinacion",
+      "descripcion": "Como germinar",
+      "id": 112,
+      "id_padre": 11,
+      "lastElem": 0                
+},
+{
+      "name": "Que necesito para cultivar",
+      "descripcion": "Indoor, Cultivo Exterior",
+      "id": 113,
+      "id_padre": 11,
+      "lastElem": 0
+},
+{
+      "name": "Sustratos",
+      "descripcion": "Tipos de Sustrato",
+      "id": 121,
+      "id_padre": 12,
+      "lastElem": 0
+},
+{
+      "name": "Fertilizantes",
+      "descripcion": "Tipos de Fertilizantes",
+      "id": 122,
+      "id_padre": 12,
+      "lastElem": 0
+},
+{
+      "name": "Poda",
+      "descripcion": "Tipos de poda y Como aplicarlas",
+      "id": 123,
+      "id_padre": 12,
+      "lastElem": 0
+},
+{
+      "name": "Plagas",
+      "descripcion": "Tipos de plagas y como combatirlas",
+      "id": 124,
+      "id_padre": 12,
+      "lastElem": 0
+},
+{
+      "name": "Fertilizantes",
+      "descripcion": "Tipos de Fertilizantes",
+      "id": 131,
+      "id_padre": 13,
+      "lastElem": 0
+},
+{
+      "name": "Plagas",
+      "descripcion": "Tipos de plagas y como combatirlas",
+      "id": 132,
+      "id_padre": 13,
+      "lastElem": 0
+},
+{
+      "name": "Lavado de raices",
+      "descripcion": "Como hacerlo y que productos ocupar",
+      "id": 133,
+      "id_padre": 13,
+      "lastElem": 0
+},
+{
+      "name": "Como Cosechar",
+      "descripcion": "Lo que debemos saber",
+      "link": "Link",
+      "id": 141,
+      "id_padre": 14,
+      "lastElem": 1
+},
+{
+      "name": "Secado y Curado",
+      "descripcion": "Información sobre como obtener las mejores flores",
+      "link": "Link",
+      "id": 142,
+      "id_padre": 14,
+      "lastElem": 1
+},
+
+      {
+      "name": "Tipos de Plagas y como Combatirlas",
+      "descripcion": "Encuentra toda la info aquí:",
+      "link": "Link",
+      "id": 133,
+      "id_padre": 15,
+      "lastElem": 1
+},
+{
+      "name": "Kit Indoor",
+      "descripcion": "Encuentra toda la info aquí:",
+      "link": "Link",
+      "id": 211,
+      "id_padre": 21,
+      "lastElem": 1
+},
+{
+      "name": "Sodio/Haluro",
+      "descripcion": "Encuentra toda la info aquí:",
+      "link": "https://notorious.cl/blog/index.php/2019/08/31/iluminacion-indoor-sodio-vs-led-que-elegir/",
+      "id": 221,
+      "id_padre": 22,
+      "lastElem": 1
+},
+{
+      "name": "Leds",
+      "descripcion": "Encuentra toda la info aquí:",
+      "link": "https://notorious.cl/blog/index.php/2019/08/31/iluminacion-indoor-sodio-vs-led-que-elegir/",
+      "id": 222,
+      "id_padre": 22,
+      "lastElem": 1
+},
+{
+      "name": "Fertilizantes",
+      "descripcion": "Encuentra toda la info aquí:",
+      "link": "Link",
+      "id": 223,
+      "id_padre": 22,
+      "lastElem": 1
+},
+{
+      "name": "Vaporizadores",
+      "descripcion": "Encuentra toda la info aquí:",
+      "link": "Link",
+      "id": 224,
+      "id_padre": 22,
+      "lastElem": 1
+},
+{
+      "name": "Garantía",
+      "descripcion": "Encuentra toda la info aquí:",
+      "link": "Link",
+      "id": 221,
+      "id_padre": 23,
+      "lastElem": 1
+},
+{
+      "name": "Como solicitar el cambio",
+      "descripcion": "Envíanos la info completa a contacto@notorious.cl, junto al código de tu compra.",
+      "id": 222,
+      "id_padre": 23,
+      "lastElem": 1
+},
+{
+      "name": "Cómo comprar",
+      "descripcion": "Encuentra toda la info aquí:",
+      "link": "https://notorious.cl/modules/angarslider/views/img/images/faf8d0d57c4dbe6d70fce11f6ff76e0fdf445bf8_tienda_online.png",
+      "id": 311,
+      "id_padre": 31,
+      "lastElem": 1
+},
+{
+      "name": "Fallas productos",
+      "descripcion": "El producto comprado presenta fallas",
+      "id": 321,
+      "id_padre": 32,
+      "lastElem": 0
+      
+},
+{
+      "name": "Cambio",
+      "descripcion": "Necesito realizar un cambio de un producto comprado",
+      "id": 322,
+      "id_padre": 32,
+      "lastElem": 0
+},
+{
+      "name": "Devoluciones",
+      "descripcion": "Quiero devolver mi producto",
+      "id": 323,
+      "id_padre": 32,
+      "lastElem": 0
+},
+      {
+      "name": "¿Cuanto cuesta el envío?",
+      "descripcion": "Cotiza tu envío aquí",
+      "link": "Link",
+      "id": 331,
+      "id_padre": 33,
+      "lastElem": 1
+},
+{
+      "name": "Cuanto demora el envío",
+      "descripcion": "Los envíos toman entre 3 y 4 días hábiles en llegar a tu dirección, desde el momento en que se acredite tu pago",
+      "id": 332,
+      "id_padre": 33,
+      "lastElem": 1
+},
+{
+      "name": "¿Donde está mi producto?",
+      "descripcion": "Déjanos el código de tu compra acá y te enviaremos el link de seguimiento por correo electrónico",
+      "id": 333,
+      "id_padre": 33,
+      "lastElem": 1
+},
+{
+      "name": "Donde Retirar",
+      "descripcion": "Nuestra oficina para retiro está ubicada en Huelene 10 oficina 1B. providencia, Santiago.",
+      "id": 341,
+      "id_padre": 34,
+      "lastElem": 1
+},
+{
+      "name": "¿Cuando puedo realizar el retiro de mi producto?",
+      "descripcion": "Puedes retirar desde las 16 horas el día posterior al que se acredite tu pago",
+      "id": 342,
+      "id_padre": 34,
+      "lastElem": 1
+},
+{
+      "name": "Pago en Efectivo",
+      "descripcion": "Debes realizar la compra por nuestra web, al finalizar te entregará los datos para que realices la transferencia electrónica o  el depósito en el Banco. No se puede pagar en efectivo en el local.",
+      "id": 351,
+      "id_padre": 35,
+      "lastElem": 1
+},
+{
+      "name": "Pago Online",
+      "descripcion": "Pudes pagar a través de webpay o sweetpay. Sweetpay es un sistema Sueco que permite pagar hasta 14 días después de ralizada la compra",
+      "id": 352,
+      "id_padre": 35,
+      "lastElem": 1
+},
+{
+  "name": "Garantías de las semillas",
+  "descripcion": "Encuentra toda la info aquí:",
+  "link":"link",
+  "id": 1111,
+  "id_padre": 111,
+  "lastElem": 1               
+},
+{
+  "name": "Feminizada o automáticas",
+  "descripcion": "Encuentra toda la info aquí:",
+  "link": "https://notorious.cl/blog/index.php/2019/08/19/semillas-feminizadas-todo-lo-que-debes-saber-sobre-ellas/",
+  "id": 1112,
+  "id_padre": 111,
+  "lastElem": 1                
+},
+{
+  "name": "Granel",
+  "descripcion": "Encuentra toda la info aquí:",
+  "link": "https://notorious.cl/blog/index.php/2019/09/12/semillas-de-marihuana-a-granel-todo-lo-que-debes-saber/",
+  "id": 1113,
+  "id_padre": 111,
+  "lastElem": 1                
+},
+{
+  "name": "Promociones",
+  "descripcion": "Revisa nuestras promociones aquí:",
+  "link": "https://notorious.cl/productos-rebajados",
+  "id": 1114,
+  "id_padre": 111,
+  "lastElem": 1                
+},
+{
+  "name": "Como germinar",
+  "descripcion": "Encuentra toda la info aquí:",
+  "link": "https://notorious.cl/blog/index.php/2019/09/18/3-tecnicas-para-germinar-semillas-de-marihuana-blog-notorious/",
+  "id": 1121,
+  "id_padre": 112,
+  "lastElem": 1
+},
+{
+  "name": "Cultivo Indoor",
+  "descripcion": "Encuentra toda la info aquí:",
+  "link": "https://notorious.cl/blog/index.php/2019/08/09/que-debe-tener-un-kit-indoor-completo/",
+  "id": 1131,
+  "id_padre": 113,
+  "lastElem": 1
+},
+{
+  "name": "Cultivo Exterior",
+  "descripcion": "Encuentra toda la info aquí:",
+  "link": "Link",
+  "id": 1132,
+  "id_padre": 113,
+  "lastElem": 1
+},
+{
+  "name": "Sustratos",
+  "descripcion": "Encuentra toda la info aquí:",
+  "link": "Link",
+  "id": 1211,
+  "id_padre": 121,
+  "lastElem": 1
+},
+{
+  "name": "Fertilizantes",
+  "descripcion": "Encuentra toda la info aquí:",
+  "link": "Link",
+  "id": 1221,
+  "id_padre": 122,
+  "lastElem": 1
+},
+{
+  "name": "Poda",
+  "descripcion": "Encuentra toda la info aquí:",
+  "link": "Link",
+  "id": 1231,
+  "id_padre": 123,
+  "lastElem": 1
+},
+{
+  "name": "Plagas",
+  "descripcion": "Encuentra toda la info aquí:",
+  "link": "Link",
+  "id": 1241,
+  "id_padre": 124,
+  "lastElem": 1
+},
+{
+  "name": "Fertilizantes",
+  "descripcion": "Encuentra toda la info aquí:",
+  "link": "Link",
+  "id": 1311,
+  "id_padre": 131,
+  "lastElem": 1
+},
+{
+  "name": "Plagas",
+  "descripcion": "Encuentra toda la info aquí:",
+  "link": "Link",
+  "id": 1321,
+  "id_padre": 132,
+  "lastElem": 1
+},
+{
+  "name": "Lavado de raices",
+  "descripcion": "Encuentra toda la info aquí:",
+  "link": "Link",
+  "id": 1331,
+  "id_padre": 133,
+  "lastElem": 1
+},
+{
+  "name": "Fallas productos",
+  "descripcion": "Envíanos la info completa a contacto@notorious.cl, junto al código de tu compra.",
+  "id": 3211,
+  "id_padre": 321,
+  "lastElem": 1
+  
+},
+{
+  "name": "Cambio",
+  "descripcion": "Envíanos la info completa a contacto@notorious.cl, junto al código de tu compra.",
+  "id": 3221,
+  "id_padre": 322,
+  "lastElem": 1
+},
+{
+  "name": "Devoluciones",
+  "descripcion": "Envíanos la info completa a contacto@notorious.cl, junto al código de tu compra.",
+  "id": 3231,
+  "id_padre": 323,
+  "lastElem": 1
+}
+]}
+    
