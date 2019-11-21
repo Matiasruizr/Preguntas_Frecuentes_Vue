@@ -22,13 +22,28 @@
 import topBar from './components/Externos/topBar.vue'
 import json from './components/Data/categories.json'
 import categories from './components/Data/categories.vue'
+import Vue from 'vue'
+import Vuex from 'vuex'
+
+
+Vue.use(Vuex);
+
+
+const store = new Vuex.Store({
+    state: {
+        state: 0
+    }
+});
+
 
 
 export default {
   name: 'app',
+  store,
   components: {
     topBar,
     categories,
+
   },
   data() {
     return{
@@ -36,6 +51,11 @@ export default {
       categories_json: json.categories
     }
   },
+      computed: {
+        count () {
+            return this.$store.state.count
+        }
+    }
 }
 
 
