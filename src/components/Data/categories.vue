@@ -1,32 +1,37 @@
 <template>
     <div id="cat" >
-        <h1>{{active_category}}</h1>
-        <h3><a v-on:click="clickCategory(id)" >{{name}}</a></h3>
+        <!-- <h1>{{upList}}</h1> -->
+        <h3><a v-if="lastElem == 0" @click="increment(id), update_upList(name)">{{name}}</a>
+        <a v-else>{{name}}</a></h3>
         <p>{{descripcion}}</p>
-        <a v-if="link">{{link}}</a>
+        <span v-if="link" ><a :href="link">{{link}}</a></span>
+
     </div>
 </template>
 
 <script>
 
+import { mapState, mapMutations} from 'vuex'
+import store from '../../store/index.js'
+
 
 
 export default {
+    store,
     name: 'cat',
     props: ['name', 'descripcion', 'id', 'id_padre', 'lastElem', 'link'],
 
 
-  // data() {
-  //   return{
-  //     active_category: null,
-  //   }
-  // },
+
   methods: {
-       clickCategory: function (element) {         
-         this.active_category = element;
-         
-    }
+     ...mapMutations(['increment', 'update_upList', 'indexUpList']),
+
   },
+  computed: {
+
+    ...mapState(['count', 'upList']), 
+
+  }
 }
 
 </script>

@@ -2,17 +2,19 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 
 
+
 Vue.use(Vuex);
 
-
-export default const store = new Vuex.Store({
+export default new Vuex.Store({
     state: {
-      actCat: 0,
+      count: 0,
     },
-    mutations: {
+    mutations:
+     {
       increment (state, element) {
         // mutate state
-        state.actCat= element
-      }
+        
+        state.count = element
+      },
     }
-  })
+  });

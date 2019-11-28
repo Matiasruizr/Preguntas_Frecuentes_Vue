@@ -1,17 +1,18 @@
 <template>
   <div id="app">
     <topBar titulo="Preguntas Frecuentes"/>
-
-    <!-- <template v-if="active_category == 0">
-    </template v-else> -->
+<template>
+    <upList/>
+    </template>
     <template>
       <div v-for="category in categories_json" :key="category.id">
-        <categories v-show="category.id_padre == active_category"
+        <categories v-show="category.id_padre == count"
         :name="category.name"
         :descripcion="category.descripcion"
         :id="category.id"
         :id_padre="category.id_padre"
         :lastElem="category.lastElem"
+        :link="category.link"
         />
       </div>
     </template>
@@ -20,29 +21,22 @@
 
 <script>
 import topBar from './components/Externos/topBar.vue'
+import upList from './components/Externos/upList.vue'
 import json from './components/Data/categories.json'
 import categories from './components/Data/categories.vue'
-import Vue from 'vue'
-import Vuex from 'vuex'
+import  {mapState, mapMutations } from 'vuex'
+import store from './store/index.js'
 
-
-Vue.use(Vuex);
-
-
-const store = new Vuex.Store({
-    state: {
-        state: 0
-    }
-});
 
 
 
 export default {
-  name: 'app',
   store,
+  name: 'app',
   components: {
     topBar,
     categories,
+    upList,
 
   },
   data() {
@@ -51,11 +45,13 @@ export default {
       categories_json: json.categories
     }
   },
-      computed: {
-        count () {
-            return this.$store.state.count
-        }
-    }
+  methods: {
+    ...mapMutations(['increment','indexUpList']),
+  },
+
+  computed: {
+    ...mapState(['count', 'upList'])
+  }
 }
 
 

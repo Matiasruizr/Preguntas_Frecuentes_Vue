@@ -4,14 +4,16 @@
       "id": 1,
       "price": 799,
       "descripcion": "Antes de Cultivar, Vegetación, Floración, Cosecha y curado, Plagas y otros.",
-      "lastElem": 0
+      "lastElem": 0,
+      "id_padre": 0
     },
     {
       "name": "Consultas sobre Productos",
       "id": 2,
       "price": 699,
       "descripcion": "Instalación, Funcionamiento, Fallas, Detalles técnicos y Diferencias entre productos",
-      "lastElem": 0
+      "lastElem": 0,
+      "id_padre": 0
       
     },
     {
@@ -19,7 +21,8 @@
       "id": 3,
       "price": 299,
       "descripcion": "Como Comprar, Problemas, Envíos, Retiro, Medios de Pago",
-      "lastElem": 0
+      "lastElem": 0,
+      "id_padre": 0
      
     },
     {
@@ -205,7 +208,7 @@
       "name": "Tipos de Plagas y como Combatirlas",
       "descripcion": "Encuentra toda la info aquí:",
       "link": "Link",
-      "id": 133,
+      "id": 153,
       "id_padre": 15,
       "lastElem": 1
 },
@@ -253,14 +256,14 @@
       "name": "Garantía",
       "descripcion": "Encuentra toda la info aquí:",
       "link": "Link",
-      "id": 221,
+      "id": 231,
       "id_padre": 23,
       "lastElem": 1
 },
 {
       "name": "Como solicitar el cambio",
       "descripcion": "Envíanos la info completa a contacto@notorious.cl, junto al código de tu compra.",
-      "id": 222,
+      "id": 232,
       "id_padre": 23,
       "lastElem": 1
 },
