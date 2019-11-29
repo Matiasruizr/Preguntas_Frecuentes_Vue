@@ -1,7 +1,7 @@
 <template>
     <div id="cat" >
 
-        <h3><a v-if="lastElem == 0" @click="increment(id)">{{name}}</a>
+        <h3><a v-if="lastElem == 0" @click="increment(id), update_upList({name:name , id: id, id_padre: id_padre})">{{name}}</a>
         <a v-else>{{name}}</a></h3>
         <p>{{descripcion}}</p>
         <span v-if="link" ><a :href="link">{{link}}</a></span>
@@ -24,7 +24,7 @@ export default {
 
 
   methods: {
-     ...mapMutations(['increment']),
+     ...mapMutations(['increment','update_upList']),
 
   },
   computed: {

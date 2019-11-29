@@ -1,7 +1,8 @@
 <template>
 <div class="upList">
+  {{upList}}{{count}}
   <div  v-for="element in upList" :key="element.name">
-    <a>
+    <a>aaa  
     {{element.name}}
     <span v-if="upList.length > 1"> > </span>
     </a>
