@@ -2,7 +2,11 @@
   <div id="app">
     <topBar titulo="Preguntas Frecuentes"/>
 <template>
-    <upList/>
+  <div v-for="element in upList" :key="element.name">
+    <upList
+    :name="element.name"
+    />
+    </div>
     </template>
     <template>
       <div v-for="category in categories_json" :key="category.id">
