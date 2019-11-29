@@ -28,9 +28,6 @@ import categories from './components/Data/categories.vue'
 import  {mapState, mapMutations } from 'vuex'
 import store from './store/index.js'
 
-
-
-
 export default {
   store,
   name: 'app',
