@@ -1,12 +1,9 @@
 <template>
 <div class="upList">
-  {{upList}}{{count}}
-  <div  v-for="element in upList" :key="element.name">
-    <a>aaa  
-    {{element.name}}
-    <span v-if="upList.length > 1"> > </span>
-    </a>
-  </div>
+
+<span v-for="element in upList" :key="element.name"><a @click="clickUpList(element)">{{element.name}}<span v-if="upList.length > 1 && upList.indexOf(element) != upList.length -1" > > </span></a> 
+
+  </span>
   </div>
 </template>
 
@@ -27,7 +24,7 @@ export default {
     
     },
     methods: {
-     ...mapMutations(['increment', 'update_upList', 'indexUpList']),
+     ...mapMutations(['increment', 'update_upList', 'clickUpList']),
 
   },
   computed: {
