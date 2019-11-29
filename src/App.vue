@@ -2,11 +2,8 @@
   <div id="app">
     <topBar titulo="Preguntas Frecuentes"/>
 <template>
-  <div v-for="element in upList" :key="element.name">
-    <upList
-    :name="element.name"
-    />
-    </div>
+
+    <upList/>
     </template>
     <template>
       <div v-for="category in categories_json" :key="category.id">

@@ -9,7 +9,8 @@ export default new Vuex.Store({
     state: {
       count: 0,
     },
-    upList: [{name: 'Preguntas Frecuentes'}],
+    upList: [{name: 'Preguntas Frecuentes', id: null, id_padre: 0}],
+
     mutations:
      {
       increment (state, element) {
@@ -19,9 +20,8 @@ export default new Vuex.Store({
       },
 
        update_upList (state, element) {
-           
-       state.upList.push({name: element}) 
-   
+        
+        this.upList.push({name: element.name, id: element.id, id_padre: element.id_padre})  
        },
        indexUpList(state, element) {
        state.index = state.array.name.indexOf(element)

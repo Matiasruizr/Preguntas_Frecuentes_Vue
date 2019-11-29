@@ -1,10 +1,11 @@
 <template>
-  <div class="upList" @click="update_upList(name)">
+<div class="upList">
+  <div  v-for="element in upList" :key="element.name">
     <a>
     {{element.name}}
     <span v-if="upList.length > 1"> > </span>
     </a>
-  
+  </div>
   </div>
 </template>
 
@@ -16,7 +17,6 @@ import  {mapState, mapMutations } from 'vuex'
 
 export default {
     // store,
-    props: ['name', 'link'],
     // index: 0,
     // upList: [{name: 'Preguntas Frecuentes'}],
     data () {
