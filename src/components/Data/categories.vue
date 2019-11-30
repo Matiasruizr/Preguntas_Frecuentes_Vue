@@ -24,7 +24,7 @@ export default {
 
 
   methods: {
-     ...mapMutations(['increment','update_upList']),
+     ...mapMutations(['increment','update_upList','clickUpList']),
 
   },
   computed: {

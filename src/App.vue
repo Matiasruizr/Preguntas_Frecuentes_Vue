@@ -44,7 +44,7 @@ export default {
     }
   },
   methods: {
-    ...mapMutations(['increment','indexUpList']),
+    ...mapMutations(['increment','indexUpList', 'clickUpList']),
   },
 
   computed: {
