@@ -10,7 +10,7 @@
 <script>
 
 import  {mapState, mapMutations } from 'vuex'
-// agregando comentario
+// agregando comentario cata
 
 
 export default {
