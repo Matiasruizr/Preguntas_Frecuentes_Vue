@@ -1,6 +1,6 @@
 <template>
 <div class="upList">
-{{cata}}
+<h1>Cata</h1>
 <span v-for="element in upList" :key="element.name"><a @click="clickUpList(element)">{{element.name}}<span v-if="upList.length > 1 && upList.indexOf(element) != upList.length -1" > > </span></a> 
 
   </span>
