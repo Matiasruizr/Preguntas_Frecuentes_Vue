@@ -64,11 +64,12 @@ export default {
 
     ...mapMutations(['increment','indexUpList', 'clickUpList']),
     sendMail: function() {
-      axios.post('https://api.sendgrid.com/v3/mail/send', {
+      sg = require('sendgrid')(process.env.SENDGRID_API_KEY);
+      sg.axios.post('https://api.sendgrid.com/v3/mail/send', {
         headers: {
           'Authorization' : 'Bearer ' + this.apikey,
           'Content-Type': 'application/json',
-          'Access-Control-Allow-Origin': 'https://preguntas-frecuentes.herokuapp.com',
+          'Access-Control-Allow-Origin': '*',
           'Access-Control-Allow-Methods': 'POST, GET, OPTIONS',
           'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept'
         },
