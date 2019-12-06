@@ -66,7 +66,9 @@ export default {
       var request = sg.emptyRequest({
         method: 'POST',
         path: '/v3/mail/send',
-        Authorization: Bearer SENDGRID_API_KEY,
+        headers: {
+            'Authorization': 'Bearer '+ SENDGRID_API_KEY
+        }
         body: {
           personalizations: [
             {
