@@ -17,8 +17,23 @@
         />
       </div>
     </template>
+    <div id="app">
+    <template>
+    <h3><a>Otras Consultas</a></h3>
+    <h4>Mail</h4>
+    <div>
+    <input v-model="mail" placeholder="Dejanos tu mail">{{mail}}<br>
+    </div>
+    <h3>Consulta</h3>
+    <p>{{ mensaje }}</p>
+    <textarea type="text" v-model="mensaje" placeholder="Escribe Aqui tu consulta"></textarea><br>
+    </template>
+
+    <button @click="sendMail()">Enviar</button>
+  </div>
   </div>
 </template>
+
 
 <script>
 import topBar from './components/Externos/topBar.vue'
@@ -40,12 +55,53 @@ export default {
   data() {
     return{
       // active_category: 3,
-      categories_json: json.categories
+      categories_json: json.categories,
     }
   },
   methods: {
+
     ...mapMutations(['increment','indexUpList', 'clickUpList']),
-  },
+    sendMail: function() {
+      var sg = require('sendgrid')(process.env.SENDGRID_API_KEY);
+      var request = sg.emptyRequest({
+        method: 'POST',
+        path: '/v3/mail/send',
+        body: {
+          personalizations: [
+            {
+              to: [
+                {
+                  email: 'jmmontes@uc.cl',
+                },
+              ],
+              subject: 'Hello World from the SendGrid Node.js Library!',
+            },
+          ],
+          from: {
+            email: 'test@example.com',
+          },
+          content: [
+            {
+              type: 'text/plain',
+              value: 'Hello, Email!',
+            },
+          ],
+        },
+      });
+          sg.API(request)
+            // .then(response => {
+            //   // console.log(response.statusCode);
+            //   // console.log(response.body);
+            //   // console.log(response.headers);
+            // })
+            // .catch(error => {
+            //   //error is an instance of SendGridError
+            //   //The full response is attached to error.response
+            //   // console.log(error.response.statusCode);
+            // });
+          }
+
+      },
 
   computed: {
     ...mapState(['count', 'upList'])

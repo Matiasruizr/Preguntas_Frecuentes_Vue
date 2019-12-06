@@ -9,8 +9,9 @@ export default new Vuex.Store({
     state: {
       count: 0,
       position: 0,
-      upList: [{name: 'Preguntas Frecuentes', id: 0, id_padre: 0}]
+      upList: [{name: 'Preguntas Frecuentes', id: 0, id_padre: 0}],
     },
+      
 
     mutations:
      {
@@ -28,8 +29,8 @@ export default new Vuex.Store({
        state.position = state.upList.indexOf(element),
        state.upList.splice(state.position+1)
        state.count = element.id
-   
-       }
+        
+       },
      },
 
   });
