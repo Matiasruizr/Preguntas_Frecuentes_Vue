@@ -67,7 +67,10 @@ export default {
       axios.post('https://api.sendgrid.com/v3/mail/send', {
         headers: {
           'Authorization' : 'Bearer ' + this.apikey,
-          'Content-Type': 'application/json'
+          'Content-Type': 'application/json',
+          'Access-Control-Allow-Origin': '*',
+          'Access-Control-Allow-Methods': 'POST, GET, OPTIONS',
+          'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept'
         },
           body: {
           personalizations: [
