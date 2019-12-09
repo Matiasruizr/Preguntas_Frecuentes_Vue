@@ -43,11 +43,11 @@ import categories from './components/Data/categories.vue'
 import  {mapState, mapMutations } from 'vuex'
 import store from './store/index.js'
 import axios from 'axios'
+import jmAWS from "../../components/services/api-gateway";
 
 export default {
   store,
   name: 'app',
-  apiKey: "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",
   components: {
     topBar,
     categories,
@@ -63,63 +63,21 @@ export default {
   methods: {
 
     ...mapMutations(['increment','indexUpList', 'clickUpList']),
-    sendMail: function() {
-      axios.post('https://api.sendgrid.com/v3/mail/send', {
-        headers: {
-          'Authorization' : 'Bearer ' + this.apikey,
-          'Content-Type': 'application/json',
-          'Access-Control-Allow-Origin': '*',
-          'Access-Control-Allow-Methods': 'POST, GET, OPTIONS',
-          'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept'
-        },
-          body: {
-          personalizations: [
-            {
-              to: [
-                {
-                  email: 'jmmontes@uc.cl',
-                },
-              ],
-              subject: 'Hello World from the SendGrid Node.js Library!',
-            },
-          ],
-          from: {
-            email: 'test@example.com',
-          },
-          content: [
-            {
-              type: 'text/plain',
-              value: 'Hello, Email!',
-            },
-          ],
-          }
-      })
-    }
-
-      // var sg = require('sendgrid')(process.env.SENDGRID_API_KEY);
-      // var request = sg.emptyRequest({
-      //   method: 'POST',
-      //   path: '/v3/mail/send',
-      
-      // });
-      //     sg.API(request)
-      //       // .then(response => {
-      //       //   // console.log(response.statusCode);
-      //       //   // console.log(response.body);
-      //       //   // console.log(response.headers);
-      //       // })
-      //       // .catch(error => {
-      //       //   //error is an instance of SendGridError
-      //       //   //The full response is attached to error.response
-      //       //   // console.log(error.response.statusCode);
-      //       // });
-
-
+    sendMail() {
+    let self = this;
+     jmAWS.post('v3/mail/send',{
+          array: self.urls,
+        })
+        .then(function(response){
+          console.log(response.data)
+        })
+  }
       },
 
   computed: {
     ...mapState(['count', 'upList'])
-  }
+  },
+
   
 }
 
