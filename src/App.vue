@@ -42,8 +42,7 @@ import json from './components/Data/categories.json'
 import categories from './components/Data/categories.vue'
 import  {mapState, mapMutations } from 'vuex'
 import store from './store/index.js'
-import axios from 'axios'
-import jmAWS from "../../components/services/api-gateway";
+import jmAWS from "./components/Services/api-gateway";
 
 export default {
   store,
@@ -69,7 +68,7 @@ export default {
           array: self.urls,
         })
         .then(function(response){
-          console.log(response.data)
+          alert(response.data)
         })
   }
       },
