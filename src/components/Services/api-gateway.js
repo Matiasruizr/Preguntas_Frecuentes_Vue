@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 var jmAWS = axios.create({
-  baseURL: 'https://api.sendgrid.com/',
+  baseURL: 'https://cors-anywhere.herokuapp.com/https://api.sendgrid.com/',
   headers: 
     {
       'Authorization': 'Bearer ' + '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',
