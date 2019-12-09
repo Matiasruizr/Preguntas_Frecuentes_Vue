@@ -64,8 +64,7 @@ export default {
 
     ...mapMutations(['increment','indexUpList', 'clickUpList']),
     sendMail: function() {
-      sg = require('sendgrid')(process.env.SENDGRID_API_KEY);
-      sg.axios.post('https://api.sendgrid.com/v3/mail/send', {
+      axios.post('https://api.sendgrid.com/v3/mail/send', {
         headers: {
           'Authorization' : 'Bearer ' + this.apikey,
           'Content-Type': 'application/json',
