@@ -1,14 +1,14 @@
 import axios from 'axios'
 
 var jmAWS = axios.create({
-  baseURL: 'https://cors-anywhere.herokuapp.com/api.sendgrid.com/',
+  baseURL: 'https://cors-anywhere.herokuapp.com/https://api.sendgrid.com/',
   headers: 
     {
-      'Authorization': 'Bearer ' + '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',
-    //   'Content-Type': 'application/json',
-    //   'Access-Control-Allow-Origin': 'https://preguntas-frecuentes.herokuapp.com',
-      'Access-Control-Allow-Methods': 'POST',
-    //   'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept',
+    //   'Authorization': 'Bearer _Jc7GOMAQu2pfF12MwsyZw.tVbGJPxyZHtpg5aksC0w2nR99dNMraj59A2X7yHUikY',
+      'Authorization': 'Bearer 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',
+      'Content-Type': 'application/json',
+      'Access-Control-Allow-Methods': 'POST, OPTIONS',
+      'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept',
     },
     body: {
         personalizations: [
@@ -22,7 +22,7 @@ var jmAWS = axios.create({
           },
         ],
         from: {
-          email: 'test@example.com',
+          email: 'jmmontes@notorious.cl',
         },
         content: [
           {
@@ -31,6 +31,7 @@ var jmAWS = axios.create({
           },
         ],
      }
+ 
 })
 
 export default jmAWS

@@ -64,10 +64,37 @@ export default {
     ...mapMutations(['increment','indexUpList', 'clickUpList']),
     sendMail() {
     let self = this;
-     jmAWS.post('v3/mail/send',{
+    let datos = JSON.stringify( {
+              "personalizations": [
+                {
+                  "to": [
+                    {
+                      "email": 'jmmontes@uc.cl',
+                    },
+                  ],
+                  "subject": 'Hello World from the SendGrid Node.js Library!',
+                },
+              ],
+              "from": {
+                "email": 'jmmontes@notorious.cl',
+              },
+              "content": [
+                {
+                  "type": 'text/plain',
+                  "value": 'Hello, Email!',
+                },
+              ],
+ 
+              })
+
+     jmAWS.post('v3/mail/send', {
           array: self.urls,
-        })
+          data: datos
+
+              
+        }, )
         .then(function(response){
+          alert(datos)
           alert(response.data)
         })
   }
