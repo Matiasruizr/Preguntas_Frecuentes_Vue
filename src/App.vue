@@ -42,7 +42,9 @@ import json from './components/Data/categories.json'
 import categories from './components/Data/categories.vue'
 import  {mapState, mapMutations } from 'vuex'
 import store from './store/index.js'
-import jmAWS from "./components/Services/api-gateway";
+// import jmAWS from "./components/Services/api-gateway";
+// import qs from 'qs';
+import axios from 'axios'
 
 export default {
   store,
@@ -63,38 +65,47 @@ export default {
 
     ...mapMutations(['increment','indexUpList', 'clickUpList']),
     sendMail() {
+  axios.post('/login', {
+  firstName: 'Finn',
+  lastName: 'Williams'
+})
+.then((response) => {
+  console.log(response);
+}, (error) => {
+  console.log(error);
+});
     let self = this;
-    let datos = JSON.stringify( {
-              "personalizations": [
+    // var datos = JSON.stringify({
+    //           })
+    let datos = qs.stringify({body: {
+              personalizations: [
                 {
-                  "to": [
+                  to: [
                     {
-                      "email": 'jmmontes@uc.cl',
+                      email: 'jmmontes@uc.cl',
                     },
                   ],
-                  "subject": 'Hello World from the SendGrid Node.js Library!',
+                  subject: 'Hello World from the SendGrid Node.js Library!',
                 },
               ],
-              "from": {
-                "email": 'jmmontes@notorious.cl',
+              from: {
+                email: 'jmmontes@notorious.cl',
               },
-              "content": [
+              content: [
                 {
-                  "type": 'text/plain',
-                  "value": 'Hello, Email!',
+                  type: 'text/plain',
+                  value: 'Hello, Email!',
                 },
               ],
- 
-              })
-
-     jmAWS.post('v3/mail/send', {
+          }   
+          });        
+     jmAWS.post('v3/mail/send',  {
           array: self.urls,
-          data: datos
+          data: datos    
+        },
+         )
 
-              
-        }, )
         .then(function(response){
-          alert(datos)
           alert(response.data)
         })
   }
