@@ -22,14 +22,14 @@
     <h3><a>Otras Consultas</a></h3>
     <h4>Mail</h4>
     <div>
-    <input v-model="mail" placeholder="Dejanos tu mail">{{mail}}<br>
+    <input v-model="todos.mail" placeholder="Dejanos tu mail">{{todos.mail}}<br>
     </div>
     <h3>Consulta</h3>
-    <p>{{ mensaje }}</p>
-    <textarea type="text" v-model="mensaje" placeholder="Escribe Aqui tu consulta"></textarea><br>
+    <p>{{ todos.contenido }}</p>
+    <textarea type="text" v-model="todos.contenido" placeholder="Escribe Aqui tu consulta"></textarea><br>
     </template>
 
-    <button @click="sendMail()">Enviar</button>
+    <button @click="sendMail(todos.contenido, todos.mail, upList), resetForm()">Enviar</button>
   </div>
   </div>
 </template>
@@ -42,8 +42,6 @@ import json from './components/Data/categories.json'
 import categories from './components/Data/categories.vue'
 import  {mapState, mapMutations } from 'vuex'
 import store from './store/index.js'
-// import jmAWS from "./components/Services/api-gateway";
-// import qs from 'qs';
 import axios from 'axios'
 
 export default {
@@ -59,58 +57,64 @@ export default {
     return{
       // active_category: 3,
       categories_json: json.categories,
+      todos: [
+      { contenido: "Contenido", mail:"Escribe Aqui tu consulta" },
+    ],
     }
   },
   methods: {
 
     ...mapMutations(['increment','indexUpList', 'clickUpList']),
-    sendMail() {
-  axios.post('/login', {
-  firstName: 'Finn',
-  lastName: 'Williams'
-})
-.then((response) => {
-  console.log(response);
-}, (error) => {
-  console.log(error);
-});
-    let self = this;
-    // var datos = JSON.stringify({
-    //           })
-    let datos = qs.stringify({body: {
+    sendMail(contenido, mail, upList) {
+      const options = {
+        method: 'post',
+        url: 'https://cors-anywhere.herokuapp.com/https://api.sendgrid.com/v3/mail/send',
+        data: {
               personalizations: [
                 {
                   to: [
                     {
-                      email: 'jmmontes@uc.cl',
+                      email: 'jmmontes@notorious.cl',
                     },
                   ],
-                  subject: 'Hello World from the SendGrid Node.js Library!',
+                  subject: 'Nueva consulta en Preguntas Frecuentes',
                 },
               ],
               from: {
-                email: 'jmmontes@notorious.cl',
+                email: mail,
               },
               content: [
                 {
                   type: 'text/plain',
-                  value: 'Hello, Email!',
+                  value: 'Nueva consulta en Preguntas Frecuentes \n ' + contenido + '\nEn la Categoria: '+ JSON.stringify(upList),
                 },
               ],
-          }   
-          });        
-     jmAWS.post('v3/mail/send',  {
-          array: self.urls,
-          data: datos    
-        },
-         )
+        }, 
+        headers: 
+                  {
+                    'Content-Type': 'application/json',
+                    'Authorization': 'Bearer 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',
+                    'Access-Control-Allow-Methods': 'POST, OPTIONS',
+                    'Access-Control-Allow-Headers': 'X-Requested-With, Origin,  Content-Type, Accept',
+                  },
+      
+              
+      };
+      axios(options);
 
-        .then(function(response){
-          alert(response.data)
-        })
-  }
-      },
-
+          // .then((response) => {
+          //   alert(response);
+          // }, (error) => {
+          //   alert(error);
+          // });
+    },
+      resetForm() {
+        var self = this; //you need this because *this* will refer to Object.keys below`
+        //Iterate through each object field, key is name of the object field`
+        self.todos.contenido = '',
+        self.todos.mail = ''
+    }
+  },
   computed: {
     ...mapState(['count', 'upList'])
   },
