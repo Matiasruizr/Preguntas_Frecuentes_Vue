@@ -22,7 +22,7 @@
     <h3><a>Otras Consultas</a></h3>
     <h4>Mail</h4>
     <div>
-    <input v-model="todos.mail" placeholder="Dejanos tu mail">{{todos.mail}}<br>
+    <input v-model="todos.mail" placeholder="Dejanos tu mail"><br>
     </div>
     <h3>Consulta</h3>
     <p>{{ todos.contenido }}</p>
