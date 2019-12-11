@@ -74,7 +74,7 @@ export default {
                 {
                   to: [
                     {
-                      email: 'jmmontes@notorious.cl',
+                      email: 'contacto@notorious.cl',
                     },
                   ],
                   subject: 'Nueva consulta en Preguntas Frecuentes',
