@@ -1,5 +1,5 @@
 <template>
-  <div class="topBar"><h1>{{titulo}}</h1></div>
+  <div class="topBar"><h1>{{titulo}}</h1><a href="https://www.notoriousgrow.com"><img src="http://notorious.cl/promocion/logo%20nuevo%20chico.png" /></a></div>
 </template>
 
 <script>
@@ -22,5 +22,15 @@ export default {
 }
 h1 {
     color: white;
+}
+
+img {
+  /* display: block; */
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin-top: auto;
+}
+a {
+  margin-top: auto;
 }
 </style>
