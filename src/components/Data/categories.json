@@ -255,7 +255,7 @@
 {
       "name": "Garantía",
       "descripcion": "Encuentra toda la info aquí:",
-      "link": "Link",
+      "link": "https://notorious.cl/content/6-garantia",
       "id": 231,
       "id_padre": 23,
       "lastElem": 1
@@ -299,11 +299,19 @@
 },
       {
       "name": "¿Cuanto cuesta el envío?",
-      "descripcion": "Cotiza tu envío aquí",
-      "link": "Link",
+      "descripcion": "Puedes cotizar cuanto sale el envío con nuestros expertos, directamente aquí:",
+      "link": "https://api.whatsapp.com/send?phone=56225940420&text=Hola,%20te%20escribo%20para%20cotizar%20un%20envio%20",
       "id": 331,
       "id_padre": 33,
       "lastElem": 1
+},
+{
+  "name": "Beneficio Envío Gratis",
+  "descripcion": "Tenemos beneficio de envío gratis para todos los productos que no son sustrato, dependiendo de la región y el monto de la compra, puedes encontrar la info acá:",
+  "link": "https://notorious.cl/content/1-envio",
+  "id": 334,
+  "id_padre": 33,
+  "lastElem": 1
 },
 {
       "name": "Cuanto demora el envío",
