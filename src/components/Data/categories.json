@@ -405,32 +405,32 @@
 },
 {
   "name": "Cultivo Exterior",
-  "descripcion": "Encuentra toda la info aquí:",
-  "link": "Link",
+  "descripcion": "Estamos trabajando en una nueva entrada de nuestro blog para este tema, por el momento tenemos algunos kits listos para cultivar en exterior.",
+  "link": "https://notorious.cl/759-kit-outdoor",
   "id": 1132,
   "id_padre": 113,
   "lastElem": 1
 },
 {
   "name": "Sustratos",
-  "descripcion": "Encuentra toda la info aquí:",
-  "link": "Link",
+  "descripcion": "Estamos trabajando en una nueva entrada de nuestro blog para este tema, por el momento te invitamos a revisar nuestra tienda, tenemos múltiples sustratos para tu elección:",
+  "link": "https://notorious.cl/607-sustratos-indoor",
   "id": 1211,
   "id_padre": 121,
   "lastElem": 1
 },
 {
   "name": "Fertilizantes",
-  "descripcion": "Encuentra toda la info aquí:",
-  "link": "Link",
+  "descripcion": "Estamos trabajando en una nueva entrada de nuestro blog para este tema, por el momento te invitamos a revisar nuestra tienda, tenemos muchas lineas de fertilizantes para tu elección:",
+  "link": "https://notorious.cl/526-fertilizantes",
   "id": 1221,
   "id_padre": 122,
   "lastElem": 1
 },
 {
   "name": "Poda",
-  "descripcion": "Encuentra toda la info aquí:",
-  "link": "Link",
+  "descripcion": "Estamos trabajando en una nueva entrada de nuestro blog para este tema, si tienes dudas en este momento, te dejamos el link para que te comuniques con uno de nuestros expertos:",
+  "link": "https://api.whatsapp.com/send?phone=56225940420&text=Hola,%20te%20escribo%20desde%20Notorious.cl",
   "id": 1231,
   "id_padre": 123,
   "lastElem": 1
