@@ -356,10 +356,18 @@
   "lastElem": 1               
 },
 {
-  "name": "Feminizada o automáticas",
+  "name": "Semillas Feminizadas",
   "descripcion": "Encuentra toda la info aquí:",
   "link": "https://notorious.cl/blog/index.php/2019/08/19/semillas-feminizadas-todo-lo-que-debes-saber-sobre-ellas/",
   "id": 1112,
+  "id_padre": 111,
+  "lastElem": 1                
+},
+{
+  "name": "Semillas Automáticas",
+  "descripcion": "Encuentra toda la info aquí:",
+  "link": "https://notorious.cl/blog/index.php/2019/08/14/semillas-automaticas-todo-lo-que-debes-saber-sobre-ellas/",
+  "id": 1115,
   "id_padre": 111,
   "lastElem": 1                
 },
