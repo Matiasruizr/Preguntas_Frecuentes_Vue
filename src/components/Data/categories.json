@@ -430,7 +430,7 @@
 {
   "name": "Poda",
   "descripcion": "Estamos trabajando en una nueva entrada de nuestro blog para este tema, si tienes dudas en este momento, te dejamos el link para que te comuniques con uno de nuestros expertos:",
-  "link": "https://api.whatsapp.com/send?phone=56225940420&text=Hola,%20te%20escribo%20desde%20Notorious.cl",
+  "link": "https://api.whatsapp.com/send?phone=56225940420&text=Hola,%20te%20escribo%20para%20saber%20mas%20sobre%20poda",
   "id": 1231,
   "id_padre": 123,
   "lastElem": 1
@@ -438,15 +438,15 @@
 {
   "name": "Plagas",
   "descripcion": "Encuentra toda la info aquí:",
-  "link": "Link",
+  "link": "https://notorious.cl/blog/index.php/2019/10/30/plagas-en-la-marihuana-guia-completa-blog-notorious/",
   "id": 1241,
   "id_padre": 124,
   "lastElem": 1
 },
 {
   "name": "Fertilizantes",
-  "descripcion": "Encuentra toda la info aquí:",
-  "link": "Link",
+  "descripcion": "Estamos trabajando en una nueva entrada de nuestro blog para este tema, por el momento te invitamos a revisar nuestra tienda, tenemos muchas lineas de fertilizantes para tu elección:",
+  "link": "https://notorious.cl/526-fertilizantes",
   "id": 1311,
   "id_padre": 131,
   "lastElem": 1
@@ -454,15 +454,15 @@
 {
   "name": "Plagas",
   "descripcion": "Encuentra toda la info aquí:",
-  "link": "Link",
+  "link": "https://notorious.cl/blog/index.php/2019/10/30/plagas-en-la-marihuana-guia-completa-blog-notorious/",
   "id": 1321,
   "id_padre": 132,
   "lastElem": 1
 },
 {
   "name": "Lavado de raices",
-  "descripcion": "Encuentra toda la info aquí:",
-  "link": "Link",
+  "descripcion": "Estamos trabajando en una nueva entrada de nuestro blog para este tema, si tienes dudas en este momento, te dejamos el link para que te comuniques con uno de nuestros expertos:",
+  "link": "https://api.whatsapp.com/send?phone=56225940420&text=Hola,%20te%20escribo%20para%20saber%20mas%20sobre%20lavado%20de%20raices",
   "id": 1331,
   "id_padre": 133,
   "lastElem": 1
