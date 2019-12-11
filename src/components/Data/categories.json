@@ -190,7 +190,7 @@
 {
       "name": "Como Cosechar",
       "descripcion": "Lo que debemos saber",
-      "link": "Link",
+      "link": "https://notorious.cl/blog/index.php/2019/10/30/plagas-en-la-marihuana-guia-completa-blog-notorious/",
       "id": 141,
       "id_padre": 14,
       "lastElem": 1
@@ -198,7 +198,7 @@
 {
       "name": "Secado y Curado",
       "descripcion": "Información sobre como obtener las mejores flores",
-      "link": "Link",
+      "link": "https://notorious.cl/blog/index.php/2019/11/18/como-cosechar-y-curar-cogollos-de-marihuana/",
       "id": 142,
       "id_padre": 14,
       "lastElem": 1
@@ -207,7 +207,7 @@
       {
       "name": "Tipos de Plagas y como Combatirlas",
       "descripcion": "Encuentra toda la info aquí:",
-      "link": "Link",
+      "link": "https://notorious.cl/blog/index.php/2019/10/30/plagas-en-la-marihuana-guia-completa-blog-notorious/",
       "id": 153,
       "id_padre": 15,
       "lastElem": 1
@@ -215,7 +215,7 @@
 {
       "name": "Kit Indoor",
       "descripcion": "Encuentra toda la info aquí:",
-      "link": "Link",
+      "link": "https://notorious.cl/blog/index.php/2019/08/09/que-debe-tener-un-kit-indoor-completo/",
       "id": 211,
       "id_padre": 21,
       "lastElem": 1
@@ -238,16 +238,16 @@
 },
 {
       "name": "Fertilizantes",
-      "descripcion": "Encuentra toda la info aquí:",
-      "link": "Link",
+      "descripcion": "Estamos trabajando en una nueva entrada de nuestro blog para este tema, por el momento te invitamos a revisar nuestra tienda, tenemos muchas lineas de fertilizantes para tu elección:",
+      "link": "https://notorious.cl/526-fertilizantes",
       "id": 223,
       "id_padre": 22,
       "lastElem": 1
 },
 {
       "name": "Vaporizadores",
-      "descripcion": "Encuentra toda la info aquí:",
-      "link": "Link",
+      "descripcion": "Estamos trabajando en una nueva entrada de nuestro blog para este tema, si tienes dudas en este momento, te dejamos el link para que te comuniques con uno de nuestros expertos:",
+      "link": "https://api.whatsapp.com/send?phone=56225940420&text=Hola,%20te%20escribo%20para%20saber%20mas%20sobre%20vaporizadores",
       "id": 224,
       "id_padre": 22,
       "lastElem": 1
